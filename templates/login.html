@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+{%  block container %}
+    <div class="input-area">
+        <div class="form-content">
+            <h1>Fill in the form to log in</h1>
+            <form id="login-form" action="/login" method="post">
+                <input name="email" type="email" placeholder="Please enter your email address">
+                <input type="password" id="psw" name="password"
+                       placeholder="Password" required>
+                <input type="submit" value="Submit">
+            </form>
+         {% if error %}
+            <h3 class="error">Username or password does not match!</h3>
+        {% endif %}
+        </div>
+
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/validate.js') }}"></script>
+
+{% endblock %}

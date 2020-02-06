@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+{%  block container %}
+    <div class="content-block">
+        <div class="content-area-top"></div>
+        <div class="content-area">
+            {% if key is defined %}
+                <h1>Welcome</h1>
+                <h3>Your api key is: {{ key }}</h3>
+            {% else %}
+                <h1>Well, well, well</h1>
+                <p>You must sign in to see your profile!</p>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

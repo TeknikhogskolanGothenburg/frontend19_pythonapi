@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+{%  block container %}
+    <div class="input-area">
+        <div class="form-content">
+            <h1>Fill in the form to sign up</h1>
+            <form id="signup-form" action="/signup" method="post">
+                <input name="name" type="text" placeholder="Please enter your full name">
+                <input name="email" type="email" placeholder="Please enter your email address">
+                <input type="password" id="psw1" name="psw1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                       title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                       placeholder="Password" required>
+                <input type="password" id="psw2" name="psw2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                       title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                       placeholder="Retype Password" required>
+                <input type="submit" id="commit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/validate.js') }}"></script>
+
+{% endblock %}

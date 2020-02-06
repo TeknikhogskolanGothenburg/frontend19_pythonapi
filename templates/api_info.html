@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+{%  block container %}
+    <div class="content-block">
+        <div class="content-area-top"></div>
+        <div class="content-area">
+            {% if found %}
+                <h1>Zukker! You have already signed up!</h1>
+            {% else %}
+                <h1>Great! You are now signed up</h1>
+                <p>Your api-key is: {{ uuid }}</p>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

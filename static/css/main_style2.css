@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: cornsilk;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 10px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header button {
+    background-color: aquamarine;
+    color: darkslategrey;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    font-weight: bold;
+    font-size: 14px;
+    flex: 1;
+    margin: 20px 10px;
+    max-width: 150px;
+}
+.header h1 {
+    flex: 3;
+}
+
+.main-container {
+    height: 100%;
+}
+
+.main-content {
+    padding: 10px;
+    height: 100%;
+}
+
+.input-area {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: azure;
+    box-shadow: 4px 4px 10px black;
+    margin-top: 50px;
+}
+
+.form-content form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-content form input {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-content form input[type=text], input[type=email], input[type=password] {
+    font-size: 10px;
+    width: 100%;
+}
+
+.form-content form input[type=submit] {
+    background-color: aqua;
+    color: crimson;
+}
+
+.content-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+
+}
+
+.content-area-top {
+    width: 40%;
+    height: 40px;
+    background-color: #caca00;
+     padding: 0 20px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.content-area {
+    width: 40%;
+    height: 400px;
+    background-color: yellow;
+    padding: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.error {
+    color: red;
+}
